@@ -17,7 +17,6 @@
         android:ems="10"
         android:hint="@string/weight"
         android:inputType="numberDecimal"
-        android:numeric="signed|integer|decimal"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,13 +30,13 @@
         android:ems="10"
         android:hint="@string/height"
         android:inputType="numberDecimal"
-        android:numeric="signed|integer|decimal"
         android:onClick="resetinput"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextWeight"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/CalculateButton"
@@ -72,7 +71,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextHeight"
-        app:srcCompat="@drawable/empty" />
+        app:srcCompat="@drawable/empty"
+        android:contentDescription="@string/Profile" />
 
     <TextView
         android:id="@+id/TotalBMI"
